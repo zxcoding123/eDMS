@@ -1,38 +1,142 @@
-# sv
+# eDMS (Enterprise Document Management System)
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A modern, responsive **Enterprise Document Management System** built with **SvelteKit**, **TailwindCSS**, and **shadcn/ui**. Designed for LAN/offline use, this project demonstrates **user roles, department-aware permissions, document workflows, and audit logging** with a polished UI/UX.
 
-## Creating a project
+---
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Table of Contents
 
-```sh
-# create a new project in the current directory
-npx sv create
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Future Enhancements](#future-enhancements)
+- [License](#license)
 
-# create a new project in my-app
-npx sv create my-app
-```
+---
 
-## Developing
+## Features
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- **User Accounts**
+  - Roles: `admin`, `editor`, `viewer`
+  - Department-based access control
+  - Login & logout
+  - Create new user (admin-only)
 
-```sh
-npm run dev
+- **Document Management**
+  - Metadata tracking
+  - Versioning
+  - Soft deletes / archiving
+  - Owner-based permissions
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+- **Access Control & Approval Workflow**
+  - Request access for downloads or sharing
+  - Admin or owner can approve/deny
+  - Expiration dates on access
 
-## Building
+- **Audit & Logs**
+  - Immutable access logs (view/download/share)
+  - Department tracking
+  - Admin audit logs
 
-To create a production version of your app:
+- **UI & UX**
+  - TailwindCSS + shadcn/ui components
+  - Gradient backgrounds, hover effects, subtle animations
+  - Responsive design for desktop and mobile
 
-```sh
-npm run build
-```
+- **Offline / LAN Capable**
+  - Works locally without external internet dependency
+  - Mock API ready to be replaced by backend integration
 
-You can preview the production build with `npm run preview`.
+---
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Tech Stack
+
+- **Frontend:** SvelteKit + TypeScript  
+- **UI:** TailwindCSS + shadcn/ui  
+- **State Management:** Svelte stores  
+- **Mock Backend:** TypeScript services (replaceable with real API)  
+- **Authentication:** Role-based with department awareness  
+
+---
+
+## Project Structure
+# eDMS (Enterprise Document Management System)
+
+A modern, responsive **Enterprise Document Management System** built with **SvelteKit**, **TailwindCSS**, and **shadcn/ui**. Designed for LAN/offline use, this project demonstrates **user roles, department-aware permissions, document workflows, and audit logging** with a polished UI/UX.
+
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Future Enhancements](#future-enhancements)
+- [License](#license)
+
+---
+
+## Features
+
+- **User Accounts**
+  - Roles: `admin`, `editor`, `viewer`
+  - Department-based access control
+  - Login & logout
+  - Create new user (admin-only)
+
+- **Document Management**
+  - Metadata tracking
+  - Versioning
+  - Soft deletes / archiving
+  - Owner-based permissions
+
+- **Access Control & Approval Workflow**
+  - Request access for downloads or sharing
+  - Admin or owner can approve/deny
+  - Expiration dates on access
+
+- **Audit & Logs**
+  - Immutable access logs (view/download/share)
+  - Department tracking
+  - Admin audit logs
+
+- **UI & UX**
+  - TailwindCSS + shadcn/ui components
+  - Gradient backgrounds, hover effects, subtle animations
+  - Responsive design for desktop and mobile
+
+- **Offline / LAN Capable**
+  - Works locally without external internet dependency
+  - Mock API ready to be replaced by backend integration
+
+---
+
+## Tech Stack
+
+- **Frontend:** SvelteKit + TypeScript  
+- **UI:** TailwindCSS + shadcn/ui  
+- **State Management:** Svelte stores  
+- **Mock Backend:** TypeScript services (replaceable with real API)  
+- **Authentication:** Role-based with department awareness  
+
+---
+
+## Project Structure
+
+COMING SOON.
+
+---
+
+## Future Features
+
+- Future Enhancements
+- Real backend integration (SQLite/PostgreSQL)
+- LAN-based file sharing & storage
+- File encryption & version rollback
+- Advanced audit dashboards
+- Drag-and-drop document upload
+- Email notifications for access approvals
+
+---
