@@ -1,4 +1,3 @@
-// src/lib/auth/store.ts
 import { writable } from 'svelte/store';
 import { browser } from '$app/environment';
 
@@ -6,6 +5,7 @@ export interface User {
   id: string;
   username: string;
   role: 'admin' | 'editor' | 'viewer';
+  department: string;
 }
 
 const storedUser = browser
