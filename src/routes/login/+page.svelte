@@ -39,14 +39,14 @@
 
     <!-- Login Form -->
     <form class="space-y-4" on:submit|preventDefault={handleLogin}>
-      <Input label="Username" bind:value={username} required placeholder="Enter your username" />
-      <Input type="password" label="Password" bind:value={password} required placeholder="Enter your password" />
+      <Input  bind:value={username} required placeholder="Enter your username" />
+      <Input type="password"  bind:value={password} required placeholder="Enter your password" />
 
       {#if error}
         <p class="text-red-500 text-sm">{error}</p>
       {/if}
 
-      <Button type="submit" variant="primary" class="w-full transition-transform transform hover:scale-105 bg-gray-600 text-white">
+      <Button type="submit"class="w-full transition-transform transform hover:scale-105 bg-gray-600 text-white">
         {loading ? 'Signing in…' : 'Login'}
       </Button>
     </form>
