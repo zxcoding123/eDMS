@@ -23,7 +23,7 @@
 
 	const kpis = {
 		documents: 1248,
-		users: 87,
+		employees: 87,
 		pending: 34,
 		overdue: 5
 	};
@@ -121,8 +121,8 @@
 				<div class="flex items-center gap-4">
 					<Users class="h-8 w-8" />
 					<div>
-						<p class="text-muted-foreground text-sm">Active Users</p>
-						<p class="text-xl font-bold">{kpis.users}</p>
+						<p class="text-muted-foreground text-sm">Active Employees</p>
+						<p class="text-xl font-bold">{kpis.employees}</p>
 					</div>
 				</div>
 			</div>
